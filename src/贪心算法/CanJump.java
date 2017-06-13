@@ -1,4 +1,4 @@
-package ̰���㷨;
+package 贪心算法;
 
 public class CanJump {
 	public boolean canJump(int[] A) {

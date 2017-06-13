@@ -1,4 +1,4 @@
-package ¶ş·Ö²éÕÒ;
+package äºŒåˆ†æŸ¥æ‰¾;
 
 public class SearchRange {
 	public int[] searchRange(int[] A, int target) {

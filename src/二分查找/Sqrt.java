@@ -1,6 +1,6 @@
-package ¶ş·Ö²éÕÒ;
+package äºŒåˆ†æŸ¥æ‰¾;
 
-//µ±È»ÕâµÀÌâ²»ÊÇ£¬ÕâÑùµÄÄ¿µÄ£¬ÓĞÔµÔÚĞ´¡£
+//æš‚æ—¶çš„
 public class Sqrt {
 	public int sqrt(int x) {
         // write your code here

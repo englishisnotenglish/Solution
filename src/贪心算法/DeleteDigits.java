@@ -1,4 +1,4 @@
-package ̰���㷨;
+package 贪心算法;
 
 public class DeleteDigits {
 	public String deleteDigits(String A, int k) {

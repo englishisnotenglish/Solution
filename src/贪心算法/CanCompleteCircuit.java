@@ -1,4 +1,4 @@
-package ̰���㷨;
+package 贪心算法;
 
 public class CanCompleteCircuit {
 	public int canCompleteCircuit(int[] gas, int[] cost) {
