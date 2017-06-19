@@ -6,9 +6,11 @@ public class RotateRight {
 	public ListNode rotateRight(ListNode head, int k) {
         // write your code here	
 		ArrayList<ListNode> temp = new ArrayList<ListNode>();
+		ArrayList<ListNode> temp2 = new ArrayList<ListNode>();
 		ListNode ln = head;
 		while(ln != null) {
 			temp.add(ln);
+			temp2.add(null);
 			ln = ln.next;
 		}
 		int len = temp.size();
@@ -16,23 +18,25 @@ public class RotateRight {
 			return head;
 		for (int i = 0; i < len; i++) {
 			int move = (i + k) % len;
-			if(move == len - 1) {
-				temp.get(i).next = null;
-			}
-			else if(move == 0){
-				temp.get(i).next = temp.get(0);
-				return temp.get(i);
-			}
+			temp2.set(move, temp.get(i));
 		}
-		return head;
+		for (int i = 0; i < len; i++) {
+			if(i == len - 1) {
+				temp2.get(i).next = null;
+				break;
+			}	
+			temp2.get(i).next = temp2.get(i + 1);
+		}
+		return temp2.get(0);
     }
+	
 	public static void main(String[] args) {
 		RotateRight rl = new RotateRight();
 		ListNode a = new ListNode(1);
-		ListNode b = new ListNode(2);
-		ListNode c = new ListNode(3);
-		ListNode d = new ListNode(2);
-		ListNode e = new ListNode(1);
+		ListNode b = new ListNode(1);
+		ListNode c = new ListNode(2);
+		ListNode d = new ListNode(3);
+		ListNode e = new ListNode(2);
 		a.next = b;
 		b.next = c;
 		c.next = d;
