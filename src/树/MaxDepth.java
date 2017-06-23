@@ -12,8 +12,8 @@ public class MaxDepth {
 		if(root == null)
 			return 0;
 		int ld, rd;
-		ld =  iterator(root.left)+ 1;
-		rd =  iterator(root.right)+ 1;
+		ld =  iterator(root.left) + 1;
+		rd =  iterator(root.right) + 1;
 		return ld > rd ? ld : rd;
 	}
 
