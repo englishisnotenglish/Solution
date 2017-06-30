@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-//这道题的思路是对的，只是排除的时候不能够，不知道怎么筛选。
 public class CombinationSum {
 	private HashMap<String, Boolean> map = new HashMap<String, Boolean>();
 	public List<List<Integer>> combinationSum(int[] candidates, int target) {
